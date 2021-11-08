@@ -10,7 +10,7 @@ namespace Fibonacci_Series
     {
         static void Main(string[] args)
         {
-            Label: Console.WriteLine("1.Fibonacci Series 2.Perfactnumber 3.primeNumber 4.Reversenumber\n");
+            Label: Console.WriteLine("1.Fibonacci Series 2.Perfactnumber 3.primeNumber 4.Reversenumber 5.stopwatch 6.Couponnumber 7.Vending_machine\n");
             Console.WriteLine("type the option");
             int i = int.Parse(Console.ReadLine());
             switch (i)
@@ -36,6 +36,21 @@ namespace Fibonacci_Series
                     Console.WriteLine("Enter the Number: \n");
                     Reversenumber obj2 = new Reversenumber();
                     obj2.reversenumbers();
+                    break;
+                case 5:
+                    Console.WriteLine("Enter the Number: \n");
+                    stopwatch obj3 = new stopwatch();
+                    obj3.printWatch();
+                    break;
+                case 6:
+                    Console.WriteLine("Enter the Number: \n");
+                    Couponnumber obj4 = new Couponnumber();
+                    obj4.coupons(10);
+                    break;
+                case 7:
+                    Console.WriteLine("Enter the Number: \n");
+                    Vending_machine obj5= new Vending_machine();
+                    obj5.MinimumNumberOfNote(1000);
                     break;
                 default:
                     Console.WriteLine("invalid option");

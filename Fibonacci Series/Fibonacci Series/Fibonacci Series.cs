@@ -4,22 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Fibonacci_Series
 {
     class Class1
     {
         public void fibonacciseris()
         {
-             int n1 = 0, n2 = 1, n3, i, number;
+             int N1 = 0, N2 = 1, N3, i, Number;
             //Console.Write("Enter the number of elements: ");
-            number = int.Parse(Console.ReadLine());
-            Console.Write(n1 + " " + n2 + " "); //printing 0 and 1    
-            for (i = 2; i < number; ++i) //loop starts from 2 because 0 and 1 are already printed    
+            Number = int.Parse(Console.ReadLine());
+            Console.Write(N1 + " " + N2 + " "); //printing 0 and 1    
+            for (i = 2; i < Number; ++i) //loop starts from 2 because 0 and 1 are already printed    
             {
-                n3 = n1 + n2;
-                Console.Write(n3 + " ");
-                n1 = n2;
-                n2 = n3;
+                N3 = N1 + N2;
+                Console.Write(N3 + " ");
+                N1 = N2;
+                N2 = N3;
             }
         }
         }
